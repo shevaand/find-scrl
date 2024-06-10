@@ -1,0 +1,108 @@
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-header {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.dropdown-header:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(25px);
+  background-color: #212121ee;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #3b3b3b77
+}
+
+.dropdown-items {
+  height: 400px;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.dropdown-items::-webkit-scrollbar{
+  display: none;
+}
+
+.coinsList {
+  color: lightgray;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.serchImg {
+  color: white;
+  transform: scaleX(-1);
+}
+
+.dropdown-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-chevron-down {
+  margin-left: 5px;
+}
+
+.fa-chevron-up {
+  margin-left: 5px;
+}
+
+.clear-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-btn::before,
+.clear-btn::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: linear-gradient(to bottom, blue, gray);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clear-btn::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.clear-btn::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.input-search-btn {
+  display: flex;
+  padding-bottom: 5px; 
+  border-bottom: 2px solid #f2f2f2;
+}

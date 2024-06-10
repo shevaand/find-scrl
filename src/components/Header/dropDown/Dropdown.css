@@ -19,12 +19,13 @@
   height: 450px;
   overflow: hidden;
   position: absolute;
-  transform: translateY(25px);
   background-color: #212121ee;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px #3b3b3b77
+  box-shadow: 3px 3px 10px #3b3b3b77;
+  transform: translate(-50%, 5%);
+  left: 50%;
 }
 
 .dropdown-items {
